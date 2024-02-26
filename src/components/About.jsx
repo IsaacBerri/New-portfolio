@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import React from "react";
+import '../styles/About.css';
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
         <button className="btn"><Icon icon="material-symbols:download" width="24" height="24" /> Curriculum</button>
       </section>
       <section className="aboutImage">
-
+        <img src="https://i.postimg.cc/501XkyPv/Planet-4.png" alt="" />
       </section>
     </main>
   );

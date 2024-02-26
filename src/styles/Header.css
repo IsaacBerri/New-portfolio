@@ -1,0 +1,90 @@
+.headerContainer {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(10, 22, 52, 1) 0%, black 42%);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .headerInfo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+  }
+  
+  .headerText h1 {
+    font-size: 80px;
+  }
+  
+  .headerText span {
+    color: aqua;
+  }
+  
+  .headerText h2 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(aqua, #eee);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .headerContact {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .headerContact a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .headerContact a:hover {
+    background: white;
+    color: black;
+  }
+  
+  .headerImage {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .headerImage img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    animation: astronautMovement 6s ease-in-out infinite;
+  }
+  
+  @keyframes astronautMovement {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0);
+    }
+    25% {
+      transform: translate(-5px, -5px) rotate(-2deg);
+    }
+    50% {
+      transform: translate(5px, 5px) rotate(2deg);
+    }
+    75% {
+      transform: translate(-5px, 5px) rotate(-2deg);
+    }
+  }

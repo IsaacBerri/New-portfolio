@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import 'animate.css'
 import './styles/App.css'
 import About from './components/About'
+import Skills from './components/Skills';
+import Project from './components/Project'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
       <Navbar/>
       <Header/>
       <About/>
+      <Project/>
+      <Skills/>
     </>
   )
 }
