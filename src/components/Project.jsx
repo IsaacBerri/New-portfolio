@@ -1,23 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Project.css";
 import usePagination from "../hooks/usePagination";
+import useGetProject from "../hooks/useGetProject";
 
 const Project = () => {
-  const [Projects, setProjects] = useState([]);
+  const { projects } = useGetProject();
 
-  useEffect(() => {
-    fetch("../api/Projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
-
-
+  console.log("projects", projects);
   const width = () => {
     if (window.innerWidth <= 600) {
       return 1;
     }
     return 3;
-  }
+  };
 
   const {
     currentProjects,
@@ -25,13 +20,17 @@ const Project = () => {
     prevPage,
     currentPage,
     indexOfLastProject,
-  } = usePagination(Projects, width());
+  } = usePagination(projects, width());
 
   return (
     <section className="project" id="Project">
       <h2>Projects</h2>
       <section className="projectContainer">
-        <button onClick={prevPage} disabled={currentPage === 1} className="btn btnPrev">
+        <button
+          onClick={prevPage}
+          disabled={currentPage === 1}
+          className="btn btnPrev"
+        >
           Prev
         </button>
         {currentProjects.map((project) => (
@@ -57,7 +56,7 @@ const Project = () => {
         <button
           className="btn btnNext"
           onClick={nextPage}
-          disabled={indexOfLastProject >= Projects.length}
+          disabled={indexOfLastProject >= projects.length}
         >
           Next
         </button>

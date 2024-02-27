@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const usePagination = ( Projects, numberOfPages ) => {
+  console.log(Projects);
     const [currentPage, setCurrentPage] = useState(1);
   const projectPerPage =  numberOfPages // Número de países por página
 
