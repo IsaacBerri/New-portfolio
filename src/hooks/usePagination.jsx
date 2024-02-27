@@ -1,16 +1,19 @@
 import { useState } from "react";
 
-const usePagination = ( Projects, numberOfPages ) => {
+const usePagination = (Projects, numberOfPages) => {
   console.log(Projects);
-    const [currentPage, setCurrentPage] = useState(1);
-  const projectPerPage =  numberOfPages // Número de países por página
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectPerPage = numberOfPages; // Número de países por página
 
   // Calcula el índice del último país en la página actual
   const indexOfLastProject = currentPage * projectPerPage;
   // Calcula el índice del primer país en la página actual
   const indexOfFirstProject = indexOfLastProject - projectPerPage;
   // Obtiene los países de la página actual
-  const currentProjects = Projects.slice(indexOfFirstProject, indexOfLastProject);
+  const currentProjects = Projects.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
 
   // Cambiar a la siguiente página
   const nextPage = () => {
@@ -27,8 +30,8 @@ const usePagination = ( Projects, numberOfPages ) => {
     nextPage,
     prevPage,
     currentPage,
-    indexOfLastProject
-  }
-}
+    indexOfLastProject,
+  };
+};
 
-export default usePagination
+export default usePagination;
