@@ -1,10 +1,10 @@
-import Header from './components/Header'
-import Navbar from './components/Navbar'
 import 'animate.css'
 import './styles/App.css'
-import About from './components/About'
-import Skills from './components/Skills';
-import Project from './components/Project'
+import Navbar from './components/Navbar.jsx'
+import Header from './components/Header.jsx'
+import About from './components/About.jsx'
+import Skills from './components/Skills.jsx';
+import Project from './components/Project.jsx'
 
 function App() {
 
