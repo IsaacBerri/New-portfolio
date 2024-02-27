@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../styles/Project.css";
-import usePagination from "../hooks/usePagination";
-import useGetProject from "../hooks/useGetProject";
+import usePagination from "../hooks/usePagination.jsx";
+import useGetProject from "../hooks/useGetProject.jsx";
 
 const Project = () => {
   const { projects } = useGetProject();
