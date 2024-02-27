@@ -4,7 +4,7 @@ import '../styles/Header.css';
 
 const Header = () => {
   return (
-    <header className="headerContainer">
+    <header className="headerContainer" id="Home">
       <section className="headerInfo animate__animated animate__zoomInLeft">
         <div className="headerText">
           <h1>

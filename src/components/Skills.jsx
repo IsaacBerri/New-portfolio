@@ -4,7 +4,7 @@ import '../styles/Skills.css';
 
 const Skills = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="Skills">
       <img className="planet1" src="https://i.postimg.cc/N0CHSXMZ/Planet-1.png" alt="" />
       <img className="planet2" src="https://i.postimg.cc/zBdxXKdk/planet-2.png" alt="" />
       <img className="planet3" src="https://i.postimg.cc/L5Kg1CSR/Planet-3.png" alt="" />

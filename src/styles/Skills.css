@@ -2,13 +2,6 @@
     width: 100%;
     height: auto;
     background: black;
-    /* background: radial-gradient(
-      circle,
-      rgba(0, 254, 255, 1) 0%,
-      rgba(0, 180, 180, 1) 0%,
-      rgba(0, 109, 109, 1) 0%,
-      rgba(0, 0, 0, 1) 52%
-    ); */
     position: relative;
     z-index: 4;
     padding: 90px 50px 50px 50px;
@@ -154,4 +147,37 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .skills {
+      padding: 20px;
+    }
+
+    .skills .planet1 {
+      top: 170px;
+      left: 0;
+    }
+
+    .skills .planet2 {
+      bottom: 70px;
+      left: -50px;
+    }
+
+    .skills h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .skills p {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .skills .skillsContainer {
+      margin-top: 50px;
+      padding: 20px;
+      gap: 20px;
+    }
   }
