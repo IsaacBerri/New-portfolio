@@ -13,7 +13,7 @@ const Header = () => {
           <h2>Full Stack Developer</h2>
           <p>Building digital experiences, one line of code at a time.</p>
         </div>
-        <div className="headerContact">
+        <div className="contact">
           <a href="www.linkedin.com/in/isaacberrio" target="_blank">
             <Icon icon="mdi:linkedin" width="24" height="24" /> Linkedin
           </a>
