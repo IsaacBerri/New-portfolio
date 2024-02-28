@@ -1,88 +1,90 @@
-
 .about {
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(
-      at bottom left,
-      rgba(83, 18, 148, 1) 0%,
-      rgba(53, 12, 95, 1) 0%,
-      rgba(32, 8, 57, 1) 16%,
-      rgba(20, 5, 36, 1) 37%,
-      rgba(0, 0, 0, 1) 61%
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    at bottom left,
+    rgba(83, 18, 148, 1) 0%,
+    rgba(53, 12, 95, 1) 0%,
+    rgba(32, 8, 57, 1) 16%,
+    rgba(20, 5, 36, 1) 37%,
+    rgba(0, 0, 0, 1) 61%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.about .aboutInfo {
+  padding: 90px 50px 50px 50px;
+  width: 50%;
+  height: 100%;
+}
+
+.about .aboutInfo h2 {
+  color: white;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ab00ff, #eee);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .aboutInfo p {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about .aboutInfo span {
+  color: #ab00ff;
+}
+
+.about .aboutInfo a {
+  text-decoration: none;
+}
+
+.about .aboutImage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
   }
-  
+
   .about .aboutInfo {
-    padding: 90px 50px 50px 50px;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    padding: 20px;
   }
-  
+
+  .about .aboutInfo .btn {
+    margin: 0 auto;
+  }
+
   .about .aboutInfo h2 {
-    color: white;
-    font-size: 50px;
-    background: -webkit-linear-gradient(#ab00ff, #eee);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-align: center;
   }
-  
+
   .about .aboutInfo p {
-    color: white;
-    font-size: 20px;
+    text-align: center;
+    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
-  .about .aboutInfo span {
-    color: #ab00ff;
-  }
 
-  
   .about .aboutImage {
-    width: 50%;
+    width: 100%;
+  }
+
+  .about .aboutImage img {
+    width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
-  @media (max-width: 600px) {
-    .about {
-      flex-direction: column;
-    }
-
-    .about .aboutInfo {
-      width: 100%;
-      padding: 20px;
-    }
-
-    .about .aboutInfo .btn {
-      margin: 0 auto;
-    }
-
-    .about .aboutInfo h2 {
-      text-align: center;
-    }
-
-    .about .aboutInfo p {
-      text-align: center;
-      font-size: 16px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    .about .aboutImage {
-      width: 100%;
-    }
-
-    .about .aboutImage img {
-      width: 100%;
-      height: 100%;
-    }
-  }
+}

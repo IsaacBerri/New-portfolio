@@ -67,6 +67,15 @@ const useGetProject = () => {
       technologies: ["HTML", "CSS", "Bootstrap"],
       typeProject: "Frontend",
     },
+    {
+      id: 7,
+      name: "Bingo",
+      description: "Bingo is a web application that allows you to play bingo in an interactive and pleasant way, the big 3 HTML, CSS and JavaScript were used",
+      imageUrl: "https://i.postimg.cc/RFSRKkRb/Captura-de-pantalla-26.png",
+      url: "https://bingo-kappa-lovat.vercel.app/",
+      technologies: ["HTML", "CSS", "Javascript"],
+      typeProject: "Frontend",
+    }
   ];
 
   return { projects };

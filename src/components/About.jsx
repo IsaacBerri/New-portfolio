@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import React from "react";
-import '../styles/About.css';
+import "../styles/About.css";
 
 const About = () => {
   return (
@@ -22,7 +22,12 @@ const About = () => {
           , allowing me to create complete web applications from scratch and
           take them from concept to implementation.
         </p>
-        <button className="btn"><Icon icon="material-symbols:download" width="24" height="24" /> Curriculum</button>
+        <a href="../doc/CV Isaac.pdf" download="CV Isaac.pdf">
+          <button className="btn">
+            <Icon icon="material-symbols:download" width="24" height="24" />{" "}
+            Curriculum
+          </button>
+        </a>
       </section>
       <section className="aboutImage">
         <img src="https://i.postimg.cc/501XkyPv/Planet-4.png" alt="" />
