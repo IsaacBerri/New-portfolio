@@ -7,7 +7,7 @@ const Footer = () => {
       <p>© 2024 Copyright: Isaac Berrio</p>
       <div>
       <div className="contact">
-          <a aria-label="Linkedin" href="www.linkedin.com/in/isaacberrio" target="_blank">
+          <a aria-label="Linkedin" href="https://www.linkedin.com/in/isaacberrio/" target="_blank">
             <Icon icon="mdi:linkedin" width="24" height="24" />
           </a>
           <a aria-label="Github" href="https://github.com/IsaacBerri" target="_blank">
