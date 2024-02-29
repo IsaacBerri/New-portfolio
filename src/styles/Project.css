@@ -124,7 +124,7 @@
   }
   .project .projectContainer {
     gap: 10px;
-    height: 70%;
+    height: 80%;
     position: relative;
   }
   .project .projectContainer .btnPrev {
