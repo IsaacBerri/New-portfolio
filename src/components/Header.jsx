@@ -14,7 +14,7 @@ const Header = () => {
           <p>Building digital experiences, one line of code at a time.</p>
         </div>
         <div className="contact">
-          <a href="www.linkedin.com/in/isaacberrio" target="_blank">
+          <a href="https://www.linkedin.com/in/isaacberrio/" target="_blank">
             <Icon icon="mdi:linkedin" width="24" height="24" /> Linkedin
           </a>
           <a href="https://github.com/IsaacBerri" target="_blank">
