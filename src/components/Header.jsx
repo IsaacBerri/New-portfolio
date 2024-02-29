@@ -14,13 +14,13 @@ const Header = () => {
           <p>Building digital experiences, one line of code at a time.</p>
         </div>
         <div className="contact">
-          <a href="https://www.linkedin.com/in/isaacberrio/" target="_blank">
+          <a aria-label="Linkedin" href="https://www.linkedin.com/in/isaacberrio/" target="_blank">
             <Icon icon="mdi:linkedin" width="24" height="24" /> Linkedin
           </a>
-          <a href="https://github.com/IsaacBerri" target="_blank">
+          <a aria-label="Github" href="https://github.com/IsaacBerri" target="_blank">
             <Icon icon="mdi:github" width="24" height="24" /> Github
           </a>
-          <a href="mailto:berrioisaac15@gmail.com" target="_blank">
+          <a aria-label="Email" href="mailto:berrioisaac15@gmail.com" target="_blank">
             <Icon icon="ic:baseline-email" width="24" height="24" /> Email
           </a>
         </div>
