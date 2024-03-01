@@ -5,8 +5,7 @@ import useGetProject from "../hooks/useGetProject.jsx";
 
 const Project = () => {
   const { projects } = useGetProject();
-
-  console.log("projects", projects);
+  
   const width = () => {
     if (window.innerWidth <= 600) {
       return 1;
