@@ -22,7 +22,7 @@ const About = () => {
           , allowing me to create complete web applications from scratch and
           take them from concept to implementation.
         </p>
-        <a href="/dist/CV.pdf" download="CV Isaac.pdf">
+        <a href="/CV.pdf" download="CV Isaac.pdf">
           <button className="btn">
             <Icon icon="material-symbols:download" width="24" height="24" />{" "}
             Curriculum
