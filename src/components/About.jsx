@@ -32,7 +32,7 @@ const About = () => {
       <section className="aboutImage">
         <img src="https://i.postimg.cc/501XkyPv/Planet-4.png" alt="" />
       </section>
-    </main>
+    </main> 
   );
 };
 
